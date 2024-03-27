@@ -278,7 +278,9 @@ top_counts_sorted <- by_package %>%
 
 ```{r}
 
-
+top_unique_sorted <- pack_sum %>%
+  filter(unique > quantile(unique, probs = 0.99)) %>%
+  arrange(desc(unique))
 
 
 
