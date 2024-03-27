@@ -292,7 +292,7 @@ top_unique_sorted <- pack_sum %>%
 
 ```{r}
 
-
+cran %>% select(ip_id, country, package, size) %>% print()
 
 ```
 
